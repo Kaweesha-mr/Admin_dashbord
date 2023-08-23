@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows:1fr 5fr;
+    background-color: white;
+    height: 100vh;
+}
+
+.side-bar{
+    border: 1px solid black;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+header{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+}
+header>.titles{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+header>.titles>.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 50%;
+
+}
+
+header>nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+nav>ul>li{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    list-style: none;
+    margin: 10px;
+}
+
+header>nav>.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: 500;
+}
+
+header>nav>ul{
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.side-bar >.list-1{
+
+    margin-bottom: 2rem;
+}
+.side-bar >.list-1>ul>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.side-bar >.list-2>ul>li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+main{
+
+    border: 1px solid black;
+    grid-column: 2/3;
+
+
+    display: grid;
+    /* use auto fit */
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 10px;
+}
+
+main>.card{
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 10px;
+    border: 1px solid black;
+    height: 40;
+
+}
+
+.graph{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    border: 1px solid black;
+    overflow: hidden;
+    height: 10px;
+}
