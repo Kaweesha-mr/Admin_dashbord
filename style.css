@@ -126,5 +126,43 @@ main>.card{
     grid-row: 1/3;
     border: 1px solid black;
     overflow: hidden;
-    height: 10px;
+    height: 50vh;
 }
+
+
+.list-1 li{
+    
+    transition: all 0.3s ease-in-out;
+
+}
+
+.list-1 li:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.list-2 li{
+    
+    transition: all 0.3s ease-in-out;
+
+}
+
+.list-2 li:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.button>li{
+
+    transition: all 0.3s ease-in-out;
+}
+
+.button>li:hover{
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
